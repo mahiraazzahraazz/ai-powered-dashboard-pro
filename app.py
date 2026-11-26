@@ -13,7 +13,7 @@ from dotenv import load_dotenv
                                    
                                        
 st.set_page_config(
-    page_title="AI-Powered Dashboard Pro",
+    page_title="AI-Powered Dashboard",
     page_icon=":material/monitoring:",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -1506,7 +1506,7 @@ def build_printable_report_html(
         </svg>
       </div>
       <div>
-        <div class="report-title">AI-Powered Dashboard Pro</div>
+        <div class="report-title">AI-Powered Dashboard</div>
         <div class="report-subtitle">Laporan Analisis Data Bisnis</div>
       </div>
     </div>
@@ -1589,7 +1589,7 @@ def build_printable_report_html(
   </div>
 
   <div class="footer">
-    <div>AI-Powered Dashboard Pro &mdash; Kelompok: Mahira Azzahra &amp; Adelia Amanta Wada</div>
+    <div>AI-Powered Dashboard &mdash; Kelompok: Mahira Azzahra &amp; Adelia Amanta Wada</div>
     <div>Dibuat otomatis pada {now_str}</div>
   </div>
 
@@ -1629,7 +1629,7 @@ inject_theme_css(active_theme)
 global_loader = st.empty()
 if "app_booted" not in st.session_state:
     render_robot_loader(
-        global_loader, "Menyiapkan AI-Powered Dashboard Pro...", active_theme
+        global_loader, "Menyiapkan AI-Powered Dashboard...", active_theme
     )
     time.sleep(4.6)
     global_loader.empty()
@@ -1721,8 +1721,8 @@ def render_topbar(slot, source_name: str, df_obj, client_obj) -> None:
                 <div class="topbar-left">
                     <div class="brand-mark">{ICON_BAR_CHART}</div>
                     <div>
-                        <h1 class="topbar-title">AI-Powered Dashboard Pro</h1>
-                        <p class="topbar-sub">Ruang Kerja Analitik — DuckDB, Grafik Interaktif &amp; Analisis AI</p>
+                        <h1 class="topbar-title">AI-Powered Dashboard</h1>
+                        <p class="topbar-sub">Prototype v2.0 - Rule-Based & AI Commentary + Chat Mode + Made By Maira & Wada</p>
                     </div>
                 </div>
                 <div class="badge-group">
