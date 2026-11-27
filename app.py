@@ -2723,7 +2723,7 @@ inject_theme_css(active_theme)
 global_loader = st.empty()
 if "app_booted" not in st.session_state:
     render_robot_loader(
-        global_loader, "Menyiapkan AI-Powered Dashboard Pro...", active_theme
+        global_loader, "Loading...", active_theme
     )
     time.sleep(2.2)
     global_loader.empty()
@@ -2736,7 +2736,7 @@ if "selected_model" not in st.session_state or st.session_state.selected_model n
 
 with st.sidebar:
     with st.container(border=True):
-        sidebar_heading(ICON_KEY, "Pengaturan AI")
+        sidebar_heading(ICON_KEY, "Pengaturan")
         manual_api_key = st.text_input(
             "Groq API Key",
             type="password",
@@ -2842,7 +2842,7 @@ def render_topbar(slot, source_name: str, df_obj, client_obj) -> None:
                     <div class="brand-mark">{ICON_BAR_CHART}</div>
                     <div>
                         <h1 class="topbar-title">AI-Powered Dashboard Pro</h1>
-                        <p class="topbar-sub">Ruang Kerja Analitik — DuckDB, Grafik Interaktif &amp; Analisis AI</p>
+                        <p class="topbar-sub">Prototype v2.0 - Rule-Based & AI Commentary + Chat Mode + Made By Maira & Wada</p>
                     </div>
                 </div>
                 <div class="badge-group">
