@@ -3506,7 +3506,7 @@ def render_topbar(slot, source_name: str, df_obj, client_obj) -> None:
                     <div class="brand-mark">{ICON_BAR_CHART}</div>
                     <div>
                         <h1 class="topbar-title">AI-Powered Dashboard Pro</h1>
-                        <p class="topbar-sub">Smart Business Analytics &amp; Accounting Suite Interactive Data Intelligence, Accounting Simulator &amp; AI Analyst | <span style="color:var(--accent);font-weight:600;">Made by Maira &amp; Wada</span></p>
+                        <p class="topbar-sub">Smart Business Analytics &amp; Accounting Prototype Interactive Data Intelligence, Accounting Lab &amp; AI Analyst | <span style="color:var(--accent);font-weight:600;">Made by Maira &amp; Wada</span></p>
                     </div>
                 </div>
                 <div class="badge-group">
