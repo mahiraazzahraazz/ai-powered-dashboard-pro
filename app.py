@@ -3158,7 +3158,7 @@ def render_accounting_portal(
             modal_bahan = m2.number_input("Modal Bahan Baku Awal (Rp)", min_value=0, value=modal_bahan, step=50000, key="umkm_m_bahan")
             modal_ops = m3.number_input("Cadangan Biaya Operasional (Rp)", min_value=0, value=modal_ops, step=250000, key="umkm_m_ops")
 
-            st.markdown("##### Kalkulator HPP — A. Persediaan & Pembelian Bahan Baku")
+            st.markdown("##### Kalkulator HPP - Persediaan & Pembelian Bahan Baku")
             use_modal_bahan_awal = st.checkbox(
                 "Gunakan Modal Bahan Baku Awal sebagai Persediaan Bahan Baku Awal",
                 value=use_modal_bahan_awal,
@@ -3926,7 +3926,7 @@ def render_topbar(slot, source_name: str, df_obj, client_obj) -> None:
                     <div class="brand-mark">{ICON_BAR_CHART}</div>
                     <div>
                         <h1 class="topbar-title">AI-Powered Dashboard Pro</h1>
-                        <p class="topbar-sub">Smart Business Analytics &amp; Accounting Suite Interactive Data Intelligence, Accounting Simulator &amp; AI Analyst | <span style="color:var(--accent);font-weight:600;">Made by Maira &amp; Wada</span></p>
+                        <p class="topbar-sub">Business Intelligence, UMKM Financial Suite & AI Analyst | <span style="color:var(--accent);font-weight:600;">Made by Maira &amp; Wada</span></p>
                     </div>
                 </div>
                 <div class="badge-group">
@@ -3962,7 +3962,7 @@ if ws_c1.button(
     st.session_state.workspace_mode = "analytics"
     st.rerun()
 if ws_c2.button(
-    "Lab Akuntansi & Quiz",
+    "Akuntansi & Quiz",
     type="primary" if st.session_state.workspace_mode == "accounting" else "secondary",
     icon=":material/account_balance:",
     width="stretch",
