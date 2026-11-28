@@ -3117,7 +3117,7 @@ def render_accounting_portal(
             help="Kosongkan semua angka di Kalkulator UMKM agar siap diisi data usaha Anda.",
         )
 
-        nama_usaha = st.session_state.get("umkm_nama", "Kopi Susu Signature")
+        nama_usaha = st.session_state.get("umkm_nama", "Erde Milky")
         modal_awal_alat = st.session_state.get("umkm_m_alat", 8000000)
         modal_bahan = st.session_state.get("umkm_m_bahan", 300000)
         modal_ops = st.session_state.get("umkm_m_ops", 2500000)
