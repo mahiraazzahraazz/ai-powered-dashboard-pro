@@ -2898,7 +2898,7 @@ def render_accounting_portal(
 
     tab_quiz, tab_jurnal, tab_rasio, tab_kamus = st.tabs(
         [
-            "Quiz Akuntansi",
+            "Quiz",
             "Simulator Jurnal & Buku Besar",
             "Kalkulator Rasio & Kesehatan",
             "Kamus Akun & Rumus",
@@ -3387,7 +3387,7 @@ inject_theme_css(active_theme)
 global_loader = st.empty()
 if "app_booted" not in st.session_state:
     render_robot_loader(
-        global_loader, "Menyiapkan AI-Powered Dashboard Pro...", active_theme
+        global_loader, "Loading...", active_theme
     )
     time.sleep(2.2)
     global_loader.empty()
@@ -3506,7 +3506,7 @@ def render_topbar(slot, source_name: str, df_obj, client_obj) -> None:
                     <div class="brand-mark">{ICON_BAR_CHART}</div>
                     <div>
                         <h1 class="topbar-title">AI-Powered Dashboard Pro</h1>
-                        <p class="topbar-sub">Ruang Kerja Analitik — DuckDB, Grafik Interaktif &amp; Analisis AI</p>
+                        <p class="topbar-sub">FinSight AI | Smart Business Analytics & Accounting Suite Interactive Data Intelligence, Accounting Simulator & AI Analyst | Made by Maira & Wada</p>
                     </div>
                 </div>
                 <div class="badge-group">
@@ -3533,7 +3533,7 @@ if "workspace_mode" not in st.session_state:
 
 ws_c1, ws_c2 = st.columns(2, gap="small")
 if ws_c1.button(
-    "Analitik Data & AI",
+    "Analyze Data & AI",
     type="primary" if st.session_state.workspace_mode == "analytics" else "secondary",
     icon=":material/monitoring:",
     width="stretch",
