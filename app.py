@@ -3506,7 +3506,7 @@ def render_topbar(slot, source_name: str, df_obj, client_obj) -> None:
                     <div class="brand-mark">{ICON_BAR_CHART}</div>
                     <div>
                         <h1 class="topbar-title">AI-Powered Dashboard Pro</h1>
-                        <p class="topbar-sub">FinSight AI | Smart Business Analytics & Accounting Suite Interactive Data Intelligence, Accounting Simulator & AI Analyst | Made by Maira & Wada</p>
+                        <p class="topbar-sub">Smart Business Analytics & Accounting Suite Interactive Data Intelligence, Accounting Simulator & AI Analyst | Made by Maira & Wada</p>
                     </div>
                 </div>
                 <div class="badge-group">
