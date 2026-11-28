@@ -3208,7 +3208,7 @@ def render_accounting_portal(
                 )
             bahan_digunakan = max(bahan_tersedia - persediaan_bahan_akhir, 0)
 
-            st.markdown("##### B. Biaya Produksi (3 Kelompok Biaya)")
+            st.markdown("##### Biaya Produksi (3 Kelompok Biaya)")
             bp1, bp2, bp3 = st.columns(3, gap="small")
             bp1.number_input(
                 "Bahan Baku yang Digunakan (Rp)",
@@ -3252,7 +3252,7 @@ def render_accounting_portal(
 
             harga_pokok_produksi = max(bdp_awal + total_biaya_produksi - bdp_akhir, 0)
 
-            st.markdown("##### C. Hasil Produksi & Harga Jual")
+            st.markdown("##### Hasil Produksi & Harga Jual")
             hp1, hp2 = st.columns([1, 1.4], gap="small")
             jml_produksi = hp1.number_input(
                 "Jumlah Produk Selesai Diproduksi (Unit)",
