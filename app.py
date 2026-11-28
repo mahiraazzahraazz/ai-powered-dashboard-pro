@@ -3731,7 +3731,7 @@ if ws_c1.button(
     st.session_state.workspace_mode = "analytics"
     st.rerun()
 if ws_c2.button(
-    "Lab Akuntansi & Quiz",
+    "Akuntansi & Quiz",
     type="primary" if st.session_state.workspace_mode == "accounting" else "secondary",
     icon=":material/account_balance:",
     width="stretch",
